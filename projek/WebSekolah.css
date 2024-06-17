@@ -1,0 +1,583 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
+    box-sizing: border-box;
+}
+
+
+.to-top{
+    position: fixed;
+    top: 0;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 40px 40px 40px 40px;
+    height: 60px;
+    background-color: rgb(29, 27, 76);
+}
+
+.to-top a {
+    text-decoration: none;
+    margin: auto;
+    color: #ffffff;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 15px 10px;
+}
+
+
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(255, 255, 255); 
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+
+
+.navbar{
+    display: flex;
+    background-color:#002849 ;
+    border: none;
+    position: relative;
+    z-index: 11;
+    padding: 10px;
+    color: rgb(255, 255, 255); 
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+
+
+.profil-pendiri {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(9, 9, 9);
+    position: fixed;
+    display: none;
+    align-items: center;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    margin: auto;
+
+}
+
+.profil-pendiri .profil .close {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: 3px solid white;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.profil-pendiri .profil {
+    padding: 20px;
+    overflow: visible;
+    position: relative;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: rgb(38, 38, 96);
+    width: 700px;
+    height: 500px;
+    margin: auto;
+}
+
+
+
+.foto-teks .foto {
+    background-image: url("./img/logo.png");
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+
+.foto-teks.candra .foto{
+    background-image: url("./img/candra.jpg");
+    background-position: -100px;
+} 
+.foto-teks.otniel .foto{
+    background-image: url("./img/otnil.jpg");
+    background-position: 250px;
+} 
+
+.foto-teks.juna .foto{
+    background-image: url("./img/juna.jpg");
+    background-size: cover;
+    background-position: -100px;
+}
+.foto-teks.ojan .foto{
+    background-image: url("./img/ojan.jpg");
+    background-size: cover;
+} 
+.foto-teks.alwi .foto{
+    background-image: url("./img/alwi.jpg");
+    background-position: -100px;
+} 
+
+
+
+
+
+
+
+.menu{
+    margin-left: auto;
+    
+}
+
+.menu ul li a{
+    color: rgb(255, 255, 255);
+}
+
+
+.button-aside button {
+    display: none;
+}
+
+
+  
+
+.hero-image{
+    background-image: url("./img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    opacity: 1;
+    filter: brightness(80%) saturate(140%);
+}
+
+.hero-image h1 {
+    text-align: center;
+    margin-top: 30px;
+    z-index: 99999;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(158, 155, 155);
+
+}
+
+
+
+.quotes {
+    width: 100%;
+    
+}
+
+.quotes .teks-quotes {
+    background-color: #002849;
+    color: rgb(255, 255, 255); 
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+.text-border{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    border-left: 4px solid yellow;
+    color: aliceblue;
+}
+
+.text-border p{
+    color: rgb(49, 87, 242);
+    font-weight: bold;
+}
+
+.text-border p,.text-border h2{
+    margin-left: 10px;
+}
+
+
+.container-text-hero {
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.nama-sekolah{
+    margin:auto 10px;
+    color: aliceblue;
+}
+
+.logo{
+    background-image: url("./img/logo.png");
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+
+.kegiatan {
+    padding: 70px 20px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.judul-kegiatan {
+    color: rgb(15, 69, 123);
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dokumentasi-kegiatan {
+    display: grid;
+    grid-template-columns: 250px 2fr;
+    margin-top: 30px;
+    margin: 0 80px;
+}
+
+
+.dokumentasi-kegiatan h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgba(42, 44, 162, 0.921);
+}
+
+.dokumentasi-kegiatan p {
+    margin-top: 10px;
+    color: #000000;
+}
+
+.dokumentasi-kegiatan ul {
+    border-left: 5px solid coral;
+    margin-top:20px;
+}
+
+.dokumentasi-kegiatan ul li {
+    margin-left: 5px;
+}
+
+.dokumentasi-kegiatan .list-kegiatan ul li p {
+    color: rgb(12, 33, 226);
+    font-weight: bold;
+}
+
+.dokumentasi-kegiatan .list-kegiatan  li h4 {
+    color: rgb(67, 67, 68);
+}
+
+.list-kegiatan {
+    font-size: larger;
+}
+
+
+
+.gambar-kegiatan{
+    display: grid;
+    padding: 10px ;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.kegiatan .gambar-kegiatan .gambar {
+    background-size: cover;
+    border: 2px solid rgb(43, 55, 138);
+    border-radius: 10px;
+    height: 200px;
+    filter:  saturate(140%);
+}
+
+
+.kegiatan .gambar-kegiatan .gambar.exercise {
+    background-image: url("./img/exercise.jpg");
+}
+.kegiatan .gambar-kegiatan .gambar.worship {
+    background-image: url("./img/worship.jpg");
+}
+.kegiatan .gambar-kegiatan .gambar.study {
+    background-image: url("./img/lesson.jpg");
+}
+.kegiatan .gambar-kegiatan .gambar.studytour {
+    background-image: url("./img/studytour.jpg");
+}
+
+
+
+.desk-kegiatan {
+    display: none;
+}
+
+
+
+
+
+.about {
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(to bottom ,rgb(225, 225, 225),rgb(199, 199, 199));
+}
+
+.about .about-judul {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.content-about {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    line-height: 31px;
+}
+
+
+.about .about-gambar img {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid aliceblue;
+    height: 400px;
+    background-size: cover;
+}
+
+
+
+
+
+
+.program-akademik {
+    width: 100%;
+    padding: 50px;
+}
+
+
+
+.program-akademik .content-program {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    align-items: center;
+}
+
+.program-akademik h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #13466f;
+}
+
+
+.content-program .program {
+    border-left: 1px solid rgb(218, 205, 205);
+    background-color: #002849;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.content-program .program p {
+    margin-top: 10px;
+    color: #f7f7fe;
+    line-height: 25px;
+}
+.content-program .program h3 {
+    color: #ffffff;
+}
+
+
+.berita{
+    padding: 50px;
+    width: 100%;
+    background: linear-gradient(to bottom ,rgb(225, 225, 225),rgb(199, 199, 199));
+}
+
+.berita h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.berita .content-berita{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.berita .content-berita .news img{
+    width: 100%;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.berita .content-berita .news h4{
+    margin: 10px 0;
+}
+
+.berita .content-berita .news p {
+    font-size: 12px;
+}
+
+
+footer {
+    display: grid;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #002849;
+    color: aliceblue;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px 50px;
+}
+
+.feedback input[type="submit"]{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #2964ec;
+    cursor: pointer;
+
+}
+
+
+
+.items-footer {
+    width: 100%;
+}
+.lokasi img {
+    width: 170px;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:895px) {
+    
+
+    .dokumentasi-kegiatan {
+        grid-template-columns: 250px 2fr;
+    }
+
+    .dokumentasi-kegiatan ul li {
+        margin-top: 5px;
+    }
+
+    .list-kegiatan{
+        padding: 10px;
+    }
+
+    .gambar-kegiatan {
+        grid-template-columns: 1fr;
+    }
+
+
+    .content-about{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    
+    .content-about .gambar-about img{
+
+        width: 100%;
+    }
+    
+}
+
+
+@media screen and (max-width:768px) {
+    .dokumentasi-kegiatan {
+        grid-template-columns: 1fr;
+    }
+    .list-kegiatan {
+        display: none;
+    }
+    .gambar-kegiatan .desk-kegiatan {
+        display: block;
+        color: #2964ec;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .content-about{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+@media screen and (max-width :640px){
+    .nama-sekolah {
+        visibility: collapse;
+        display: none;
+    } 
+
+    .dokumentasi-kegiatan {
+        margin: 0 10px;
+    }
+    
+
+
+
+
+    
+    
+}
+
