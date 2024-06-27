@@ -1,0 +1,739 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+    
+}
+
+body{
+    padding-top: 60px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vw;
+    position: relative;
+}
+
+.container a {
+    text-decoration: none;
+}
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    overflow: hidden;
+    padding: 0.5em;
+    background-color: rgba(16, 21, 36, 1);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 88;
+    font-size: calc(1vw + 0.1em);
+}
+
+.navbar .logo img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.navbar .menu {
+    justify-self: end;
+    margin-right: calc(6vw - 2em);
+}
+
+.navbar .menu ul li {
+    display: inline-block;
+    padding-left: 32px;
+}
+
+.navbar .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+.navbar .menu ul li a:hover {
+    transition: 0.3s;
+    color:rgb(114, 179, 248);
+
+}
+
+.hero-image {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.hero-image img{
+    border-radius: 3px;
+    width: calc(100vw - 5em);
+    margin: auto;
+    height: 500px;
+}
+
+.hero-image .motto {
+    position: absolute;
+    top: 200px;
+    left: calc(10vw + 0.9em);
+    color: #fff;
+}
+
+.hero-image .motto .tagline {
+    width: calc(50vw + 0.1em);
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: calc(1vw + 0.3em);
+}
+
+.hero-image .motto .judul-tagline {
+    font-size: 16px;
+    color: rgb(202, 202, 202);
+}
+
+
+.hero-image .btn-daftar a button {
+    padding: 0.6em;
+    width: calc(12vw - 1em);
+    font-weight: bold;
+    background-color:  rgba(43, 167, 226, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: calc(1vw + 0.2em);
+    color: #fff;
+
+}
+
+.hero-image .btn-daftar a button:hover {
+    background-color: #fff;
+    color: blue;
+    border: 1px solid blue;
+    transition: 0.3s;
+}
+
+
+
+.hero-image .btn-daftar{
+    position: absolute;
+    left: calc(10vw + 0.9em);
+    top: 350px;
+}
+
+
+.fasilitas {
+    width: 100%;
+    padding: 0px 100px;
+}
+
+.fasilitas h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fasilitas .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 70px;
+}
+
+
+
+.fasilitas .items .item img {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.fasilitas .items .item img:hover {
+    transition: ease 0.3s;
+    cursor: pointer;
+    box-shadow: 3px 2px 2px 1px rgb(171, 171, 171);
+}
+
+.fasilitas .items .item p {
+    text-align: center;
+    color: rgb(76, 76, 76);
+}
+
+
+
+.profil-pendiri {
+    position: fixed;
+    width: 100%;
+    padding: 5em;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.9;
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+    color: #fff;
+    margin: auto;
+}
+
+.profil-pendiri h2 {
+    justify-self: center;
+    align-self: center;
+    margin-top: -60px;
+}
+
+.profil-pendiri .items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    width: 80vw;
+    margin: -50px auto;
+    gap: 20px;
+    padding: 5em;
+}
+
+.profil-pendiri .items .item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+
+
+.profil-sekolah {
+    margin: 30px 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgb(234, 234, 234);
+    padding: 0 30px;
+    display: grid;
+    background-color: rgba(212, 241, 255, 1);
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+.profil-sekolah .tagline {
+    margin: auto;
+    line-height: 30px;
+    padding: 10px;
+}
+
+
+.profil-sekolah a {
+    color: black;
+}
+
+
+.profil-sekolah .tagline p {
+    width: calc(35vw - 4em);
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.profil-sekolah .tagline h4 {
+    font-size: larger;
+}
+
+.profil-sekolah .tagline button {
+    padding: 8px;
+    background-color:  rgba(43, 167, 226, 1);
+    color: white;
+    font-weight: bold;
+    width: 130px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profil-sekolah .tagline button:hover {
+    background-color: #fff;
+    color: blue;
+    border: 1px solid blue;
+    transition: 0.3s;
+}
+
+
+.profil-sekolah .items {
+    display: grid;
+    margin: 30px 0;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+}
+
+.profil-sekolah .items .item {
+    width: 100%;
+    line-height: 30px;
+    padding: 20px;
+    height: 250px;
+    box-shadow: 0px 0px 2px 1px rgb(226, 226, 226);
+
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+
+.profil-sekolah .items .item:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 2px 5px 1px rgb(177, 177, 177);
+}
+
+
+
+.profil-sekolah .items .item .logo{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.profil-sekolah .items .item .logo span {
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 1px 0px 1px rgb(234, 234, 234);
+}
+
+.profil-sekolah .items .item  .judul {
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.profil-sekolah .items .item p {
+    color: rgb(149, 149, 149);
+}
+
+
+.visi-misi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 200px;
+    width: 100vw;
+}
+
+.visi-misi h4 {
+    background-color: rgba(43, 167, 226, 1);
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.visi ,.misi {
+    border-radius: 5px;
+    height: 200px;
+    box-shadow: 0px 0px 5px 1px rgb(183, 182, 182);
+}
+
+
+
+.visi p, .misi p{
+    padding: 20px 50px;
+    font-size: 0.7em;
+    line-height: 20px;
+    color: rgb(123, 123, 123);
+    border-radius: 5px;
+}
+
+.tujuan {
+    margin: 40px 200px;
+    box-shadow: 0px 0px 5px 1px rgb(183, 182, 182);
+    border-radius: 5px;
+}
+
+.tujuan h4{
+    background-color: rgba(43, 167, 226, 1);
+    width: 100%;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px;
+    color: #fff;
+}
+
+.tujuan ul {
+    padding: 30px 100px;
+}
+
+
+.tujuan ul li {
+    list-style: decimal;
+    line-height: 20px;
+    font-size: 13px;
+    color: rgb(123, 123, 123);
+}
+
+.strategi {
+    margin: 40px 200px;
+    box-shadow: 0px 0px 5px 1px rgb(183, 182, 182);
+    border-radius: 5px;
+}
+
+.strategi h4 {
+    text-align: center;
+    background-color: rgba(43, 167, 226, 1);
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.strategi p {
+    padding: 30px 100px;
+    line-height: 20px;
+    font-size: 13px;
+    color: rgb(123, 123, 123);
+}
+
+
+
+.berita {
+    max-width: 100vw;
+    padding: 2em  6em;
+}
+
+.berita header {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 30px;
+}
+
+.berita header p {
+    justify-self: end;
+}
+
+
+.berita .content-berita {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.berita .content-berita img {
+    width: 100%;
+    height: 230px;
+    border-radius: 5px;
+}
+
+.berita .content-berita h4 {
+    margin: 10px 0;
+}
+
+.berita .content-berita p {
+    
+    color: rgb(123, 123, 123);
+    font-size: 13px;
+}
+
+
+
+.penghargaan {
+    margin-top: 50px;
+    max-width: 100vw;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.penghargaan .bg-achievement {
+    width: 100%;
+    background-image: url("../img/bg-staff.png");
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+}
+
+
+
+
+.penghargaan .bg-achievement h4 {
+    color: #fff;
+    font-size: calc(3vw + 0.5em);
+}
+
+
+
+.penghargaan .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 30px;
+    padding: 2em calc(15vw - 1em);
+}
+
+
+.penghargaan .items .item{
+    background-image: url(../img/science.jpg);
+    border-radius: 4px;
+    margin: auto;
+    display: flex;
+    align-items: end;
+    position: relative;
+    background-size: cover;
+    height: 200px;
+    width: 400px;
+}
+
+.penghargaan .items .item p{
+    color: #fff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    background-color: rgba(1, 147, 220, 0.8);
+    width: 100%;
+}
+
+.penghargaan .items .item .lencana {
+    background-image: url(../img/First\ place\ badge\ with\ two\ ribbons.png);
+    position: absolute;
+    background-size: cover;
+    top: -30px;
+    left: -30px;
+    width: 80px;
+    height: 80px;
+}
+
+
+
+footer {
+    width: 100%;
+    box-shadow: 0px 0px 5px 1px rgb(187, 187, 187);
+    padding: 2em 4em;
+    position: relative;
+}
+
+footer .content-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+footer .content-footer .kritik button{
+    padding: 5px;
+    width: 100px;
+    background-color:  rgba(43, 167, 226, 1);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px rgb(194, 193, 193);
+
+}
+
+
+footer .content-footer .kritik input,textarea{
+    border-radius: 3px;
+    border: none;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 1px rgb(194, 193, 193);
+    
+}
+
+
+footer .content-footer .kritik textarea{
+    margin-top: 10px;
+}
+
+footer .content-footer .kritik button {
+    padding: 8px;
+    width: 130px;
+    font-weight: bold;
+}
+
+
+footer .content-footer .kritik button:hover{
+    background-color: #fff;
+    color:  rgba(43, 167, 226, 1);
+    border: 1px  solid  rgba(43, 167, 226, 1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer .content-footer .kritik{
+    line-height: 50px;
+}
+
+
+footer .content-footer .kontak {
+    line-height: 45px;
+}
+
+
+
+
+
+footer .content-footer .kontak a{
+    color: rgb(56, 56, 56);
+    border: none;
+}
+
+footer .content-footer .kontak a:hover{
+    color: rgb(72, 0, 255);
+    transition: 0.3s;
+}
+
+footer .top{
+    position: absolute;
+    top: -70px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
+
+
+footer .content-footer .alamat img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 5px 1px rgb(207, 207, 207);
+}
+
+
+footer .content-footer .alamat p {
+    font-size: 14px;
+}
+
+
+footer .copyright {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin-top: 20px;
+}
+
+
+
+footer .copyright p:last-child {
+    justify-self: end;
+}
+
+
+
+footer .copyright p {
+    font-size: 13px;
+    color: grey;
+}
+
+
+
+
+
+@media (max-width:994px){
+    * {
+        transition: 0.3s;
+    }
+    .visi-misi{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tujuan ul ,.strategi p{
+        padding: 30px 50px;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    * {
+        transition: 0.3s;
+    }
+   
+    body {
+        overflow-x: hidden;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar .menu {
+        margin-top: 10px;
+    }
+
+    .hero-image img {
+        width: 100vw;
+    }
+
+    .hero-image .btn-daftar{
+        top: 300px;
+    }
+
+    .visi-misi {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 100px;
+
+    }
+
+    .tujuan , .strategi {
+        margin: 40px 100px;
+    }
+
+
+    .tujuan ul , .strategi p{
+        padding: 30px 50px;
+    }
+
+    
+}
+
+@media (max-width:678px){
+    .profil-sekolah .tagline p {
+        width: calc(60vw - 6em);
+    }
+
+    .profil-sekolah .tagline {
+        margin: 10px 0px;
+    }
+}
+
+
+@media (max-width:576px){
+    .penghargaan .items {
+        padding: 2em 0;
+    }
+
+    .visi-misi {
+        width: 100vw;
+        padding:20px calc(3vw + 2em);
+    }
+
+    .tujuan {
+        width: 100vw;
+        margin:20px;
+    }
+}
